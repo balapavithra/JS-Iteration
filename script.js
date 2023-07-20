@@ -66,3 +66,18 @@ function divbyseven(value) {
 
 //-----------Question 8------------>
 
+//let divthree = numbers.map(divbythree);
+
+//document.getElementById("qus8").innerHTML = "8)The first element divisible by 3 is " + divthree;
+
+//function divbythree(value) {
+//return value % 3 ==0;
+//}
+
+
+let divthree = [];
+let a = numbers.map(a => {
+  if (a % 3 === 0)
+    divthree.push(a);
+});
+document.getElementById("qus8").innerHTML = "8)The element divisible by 3 are " + divthree;
